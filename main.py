@@ -68,6 +68,7 @@ print("\nTrain shape after cleaning:", train_clean.shape)
 print("Test shape after cleaning:", test_clean.shape)
 
 # Verify no missing values remain in numeric columns
+
 remaining_missing = train_clean.isnull().sum().sum()
 print("Total missing values remaining:", remaining_missing)
 print(train_clean[['release_year', 'release_month', 'weekday_of_release', 'season_of_release', 'lunar_phase']].head())
